@@ -10,7 +10,7 @@ By default jitpack.io builds with JDK 8. Specifying an other JDK version for com
 
 ***In short:***
 
-1. Add `gradle wrapper` version 6.7 or higher to your project
+1. Add `gradle wrapper` version 6.7 or higher to your project:
 
         $ gradle wrapper
         $ ./gradlew wrapper --gradle-version 6.7
@@ -18,7 +18,13 @@ By default jitpack.io builds with JDK 8. Specifying an other JDK version for com
 
 2. Push the gradle wrapper to the github repo
 
-2. Use the `toolchain` declaration in *build.gradle* (new since v6.7) in order to specify the excact version of the JDK to compile
+2. Use the `toolchain` declaration in *build.gradle* (new since v6.7) in order to specify the excact version of the JDK to compile:
+
+        java {
+            toolchain {
+                languageVersion = JavaLanguageVersion.of(14)
+            }
+        }
 
 References:
 
