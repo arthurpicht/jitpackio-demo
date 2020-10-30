@@ -18,7 +18,7 @@ dependencies {
 // see https://docs.gradle.org/6.7/release-notes.html
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(11)
+        languageVersion = JavaLanguageVersion.of(14)
     }
 }
 
