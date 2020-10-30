@@ -1,5 +1,7 @@
 # jitpackio-demo
 
+[![](https://jitpack.io/v/arthurpicht/jitpackio-demo.svg)](https://jitpack.io/#arthurpicht/jitpackio-demo)
+
 A simple demo project that shows how to use [jitpack.io](https://jitpack.io) as an open maven repository for a java project built with gradle.
 
 ## How to force jitpack.io compiling against a specified JDK version?
