@@ -2,7 +2,7 @@
 
 A simple demo project that shows how to use [jitpack.io](https://jitpack.io) as an open maven repository for a java project built with gradle.
 
-## How to force jitpack.io using a specified JDK version for compiling?
+## How to force jitpack.io compiling against a specified JDK version?
 
 By default jitpack.io builds with JDK 8. Specifying an other JDK version for compiling can be done easily by creating the `jitpack.yml` configuration file and applying *jdk: openjdk9*. See [1]. However, current JDK versions are not always supported. See [2] indicating that. Regardless of built in JDKs, jitpack can be forced using a specified JDK version by taking advantage of the `toolchain` feature, that gradle introduced in version 6.7. This feature enables for automatically downloading the specified JDK from [adoptOpenJDK](https://adoptopenjdk.net), installing it in the gradle configuration directory and finally using it for compiling. See [4] for more info. By doing so, you get completely independent of JDKs provided by jitpack.io.
 
